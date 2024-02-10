@@ -1,0 +1,83 @@
+html{
+    color-scheme: dark;
+}
+
+body{
+    margin: 0;
+    overflow-x:hidden;
+}
+
+::selection{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#head{
+    font-family: 'Fira Code', monospace;
+    background: rgb(29,70,31);
+    background: linear-gradient(-135deg, rgba(29,70,31,1) 0%, rgba(29,140,34,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#logo{
+    width: 15vw;
+}
+
+#abilites{
+    line-height: 1.5rem;
+}
+
+.abi{
+    width: 100%;
+    text-align: center;
+}
+
+#docBody{
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#docBody::selection{
+    background: rgb(29,70,31);
+}
+
+#nav{
+    display: block;
+    width: 23%;
+    background: #111111;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    float:left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+#nav::selection{
+    background: rgb(29,70,31);
+}
+#nav > h1{
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+    font-weight: 20;
+}
+
+#docCon{
+    width: 77%;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#docCon::selection{
+    background: rgb(29,70,31);
+}

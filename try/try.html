@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.min.css">
+    <style>
+        :root{
+            --editor-width: 50%;
+            --editor-height: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
+</head>
+<body style="width: 90vw; height: 90vh;">
+    <coder lang="xml" lines id="medit"></coder>
+    <!-- <div class="coder-editor" id="medit" lang="xml" noLines>
+        <div class="coder-lines hljs hljs-comment"></div>
+        <textarea name="codeEditor" class="coder-tea" spellcheck="false" wrap="hard"></textarea>
+        <div class="coder-display hljs"></div>
+    </div> -->
+    <script type="module">
+        import xml from "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/languages/xml.min.js";
+        import hljs from "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js";
+        import { coderInit } from "../index.min.js";
+        hljs.registerLanguage("xml", xml);
+        coderInit(hljs);
+    </script>
+</body>
+</html>
